@@ -6,7 +6,7 @@ SPEC_MODEL_DIR     = File.join(RAILS_ROOT, "spec/models")
 FIXTURES_DIR       = File.join(RAILS_ROOT, "test/fixtures")
 SPEC_FIXTURES_DIR  = File.join(RAILS_ROOT, "spec/fixtures")
 SPEC_FACTORIES_DIR = File.join(RAILS_ROOT, "spec/factories")
-SORT_COLUMNS       = ENV['SORT'] != 'no'
+SORT_COLUMNS       = ENV['SORT'] == 'yes'
 
 module AnnotateModels
 
