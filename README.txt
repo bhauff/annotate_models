@@ -8,7 +8,6 @@ bottom of each ActiveRecord model, Test File,
 Exemplar, Fixture and Factory source file:
 
  # == Schema Info
- # Schema version: 20081001061831
  #
  # Table name: line_item
  #
@@ -39,23 +38,20 @@ To migrate & annotate:
 
   rake db:update
 
-
 Options:
 
-Annotate on the head of the file:
+Annotate at the bottom of the file:
 
-  rake db:annotate POSITION='top'
+  rake db:annotate POSITION='bottom'
 
 Include schema version:
   rake db:annotate SHOW_SCHEMA_VERSION='true'
 
-
 Set Options Permanently:
 
 If using bash, you can put these lines in your .bashrc file to set more permanently:
-  export POSITION='top'
+  export POSITION='bottom'
   export SHOW_SCHEMA_VERSION='true'
-
 
 == LICENSE:
 

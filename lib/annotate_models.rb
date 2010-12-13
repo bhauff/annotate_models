@@ -89,10 +89,10 @@ module AnnotateModels
 
       # Write it back
       File.open(file_name, "w") do |f|
-        if ENV['POSITION'] == 'top'
-          f.print info_block + SEP_LINES + content
-        else
+        if ENV['POSITION'] == 'bottom'
           f.print content + SEP_LINES + info_block
+        else
+		  f.print info_block + SEP_LINES + content          
         end
       end
     end
